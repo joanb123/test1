@@ -18,14 +18,14 @@ function loop(start, test, update, body) {
   
 
 // 3-3. everyLoop(array, test)
-function every(array, test) {
+function everyLoop(array, test) {
     for (let element of array) {
       if (!test(element)) {
         return false; } }
     return true; }
 
 // 3-4. everySome(array, test)
-function every(array, test) {
+function everySome(array, test) {
     return !array.some(element => !test(element)); }
 
     console.log(everyLoop([1, 3, 5], n => n < 10));
